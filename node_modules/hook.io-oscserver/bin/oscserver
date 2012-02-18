@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+
+var OSCServertHook = require('../lib/oscserver').OSCServerHook;
+
+var hook = new OSCServertHook({ 
+  name: "the-osc-server-hook"
+});
+
+hook.start();

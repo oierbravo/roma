@@ -1,0 +1,27 @@
+
+{
+  "name": "roma",
+  "description": "Route OSC Messages Asynchronously",
+  "version": "0.0.1",
+  "homepage": "https://github.com/oierbravo/roma",
+
+  "repository": {
+    "type": "git", 
+    "url": "git@github.com:oierbravo/roma.git"
+  },
+  "author": {
+    "name": "Oier Bravo Urtasun", 
+    "url": "", 
+    "email": "oierbravo@gmail.com"
+  },
+  "dependencies": {
+    "omg": "*"
+    ,"hook.io": "0.8.6"
+  },
+  "main": "roma",
+  "keywords": [
+    ,"hook.io"
+    ,"osc"
+    ,"router"
+  ]
+}
