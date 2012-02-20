@@ -14,22 +14,27 @@ var routerHook = new OSCRouterHook({
   
 
 })*/
+var devicesHooks = [];
+routerHook.on('hook::ready',function(){
+  
+
+  devices.devices.forEach(function(item){
+  //console.log(item);
+  var oscHook = new OSCServerHook({
+    name: item.id
+    ,deviceId: item.id
+    ,inPort:item.senderPort
+    ,outPort:item.receiverPort
+    ,host:item.host
+  //  ,type:'osc-server'
+    ,debug:true
+  });
+  
+  oscHook.start();
+  devicesHooks.push(oscHook);
+});
+});
 routerHook.start();
 
-var devicesHooks = [];
 
-devices.devices.forEach(function(item){
-	//console.log(item);
-	var oscHook = new OSCServerHook({
-	  name: item.id
-	  ,inPort:item.senderPort
-	  ,outPort:item.receiverPort
-	  ,host:item.host
-	//  ,type:'osc-server'
-	  ,debug:true
-	});
-	
-	oscHook.start();
-	devicesHooks.push(oscHook);
-});
 
