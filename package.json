@@ -15,8 +15,7 @@
     "email": "oierbravo@gmail.com"
   },
   "dependencies": {
-    "omgosc": "*"
-    ,"hook.io": "0.8.6"
+    "hook.io": "0.8.6"
     ,"hook.io-oscserver": "*"
   },
   "main": "roma",
