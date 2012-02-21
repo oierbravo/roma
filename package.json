@@ -15,12 +15,13 @@
     "email": "oierbravo@gmail.com"
   },
   "dependencies": {
-    "omg": "*"
+    "omgosc": "*"
     ,"hook.io": "0.8.6"
+    ,"hook.io-oscserver": "*"
   },
   "main": "roma",
   "keywords": [
-    ,"hook.io"
+    "hook.io"
     ,"osc"
     ,"router"
   ]
