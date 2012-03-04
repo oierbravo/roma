@@ -1,5 +1,27 @@
 exports.routes = 
-[
+[ 
+  {
+    source:"/dummy/address",
+    targets:[{ 
+      deviceId: 'live-device1' 
+          ,path: '/live/play'
+          ,typetag: 'i'
+          ,params: [1]
+          ,routeArgs:true
+          }
+          ]
+    
+  },
+  {
+    source:"/a/a",
+    targets:[{ 
+      deviceId: 'dummy-device1', 
+          path: '/output/address'
+          
+          }
+          ]
+    
+  },
 	{
 		source:"/live/play",
 		targets:[{ 
@@ -115,18 +137,7 @@ exports.routes =
     
   },
  
-	{
-    source:"/dummy/address",
-    targets:[{ 
-      deviceId: 'live-device1' 
-          ,path: '/live/play'
-          ,typetag: 'i'
-          ,params: [1]
-          ,routeArgs:true
-          }
-          ]
-    
-  },
+	
   {
      source:"/4/multitoggle/1/1",
      targets:[{ 

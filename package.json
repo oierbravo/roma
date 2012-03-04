@@ -2,7 +2,7 @@
 {
   "name": "roma",
   "description": "Route OSC Messages Asynchronously",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/oierbravo/roma",
 
   "repository": {
@@ -15,13 +15,11 @@
     "email": "oierbravo@gmail.com"
   },
   "dependencies": {
-    "hook.io": "0.8.6"
-    ,"hook.io-oscserver": "*"
+    "omgosc": "*"
   },
-  "main": "roma",
+  "main": "lib/roma",
   "keywords": [
-    "hook.io"
-    ,"osc"
+    "osc"
     ,"router"
   ]
 }
