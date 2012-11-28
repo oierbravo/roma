@@ -7,15 +7,9 @@ exports.devices =
 		host: 'localhost'
 	}
 	,{
-		id:'dummy-device1',
-		senderPort: 9999,
-		receiverPort: 9998,
-		host: 'localhost'
-	}
-	,{
     id:'touchosc-device1',
-    senderPort: 9100,
-    receiverPort: 9101,
+    senderPort: 6666,
+    receiverPort: 7777,
     host: 'localhost'//'192.168.1.128'
   }
 ];
