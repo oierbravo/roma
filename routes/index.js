@@ -1,6 +1,22 @@
 exports.routes = 
 [ 
   {
+    source:"/b",
+    targets:[{ 
+      deviceId: 'dummy-device1' 
+          ,path: '/dummy'
+          ,typetag: 'ii'
+          ,params: [1,{
+		    input:0
+			,func:'add'
+			,funcParams:{value:-1}
+			,typetag:'i'
+		  }]
+          ,routeArgs:true
+        }]
+    
+  },
+  {
     source:"/dummy/address",
     targets:[{ 
       deviceId: 'live-device1' 
