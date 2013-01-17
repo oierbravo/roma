@@ -10,8 +10,8 @@ exports.devices =
 		id:'dummy-device1',
 		senderPort: 9999,
 		receiverPort: 9998,
-		host: 'localhost',
-		mirrors: ["live-device1"]
+		host: 'localhost'
+		//mirrors: ["live-device1"]
 	}
 	,{
     id:'touchosc-device1',
