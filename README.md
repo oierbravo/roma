@@ -13,6 +13,10 @@ WORK IN PROGRESS!!!
 ## Installation
     $ npm install roma
 
+## Usage
+	var Roma = require('./lib/roma');
+	var roma = new Roma(devices,routes);
+	
 ## Device data format:
 
     [{device1},{device2},{...}]
@@ -70,6 +74,21 @@ WORK IN PROGRESS!!!
 			  ,routeArgs:true
 			}]
 		
+	}
+###Trigger by param
+	{
+    source:"/path/to/route",
+	
+    targets:[{ 
+		   deviceId: 'target-id'
+		  ,trigger: true //Enables trigger
+		  ,triggerIndex: 0 //Index of the param
+		  ,triggerValue: 1 //Trigger value
+          ,path: '/new/path'
+          ,typetag: ''
+          ,params: []
+        }]
+    
 	}
 ## Examples:
 - Devices:
