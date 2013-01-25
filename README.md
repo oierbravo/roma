@@ -96,10 +96,10 @@ URL: http://localhost:3000
 
 ### Devices
 - GET "/devices": List of devices + info.
-- GET "/device/:id": Device info.
-- POST "/device/:id": Updates device. Requires JSON object body.
-- POST "/add-device": Adds a device. Requires JSON object body with the same data format as the config.
-- DEL "/device/:id": Deletes a device.
+- GET "/devices/:id": Device info.
+- POST "/devices/:id": Updates device. Requires JSON object body.
+- POST "/devices": Adds a device. Requires JSON object body with the same data format as the config.
+- DEL "/devices/:id": Deletes a device.
 
 ### Routes
 - GET "/routes": List of routes + info.
