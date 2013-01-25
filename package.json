@@ -2,7 +2,7 @@
 {
   "name": "roma",
   "description": "Route OSC Messages Asynchronously",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "homepage": "https://github.com/oierbravo/roma",
 
   "repository": {
@@ -16,6 +16,8 @@
   },
   "dependencies": {
     "omgosc": "*"
+	,"eyes":"*"
+	,"express":"*"
   },
   "main": "lib/roma",
   "keywords": [

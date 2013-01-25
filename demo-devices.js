@@ -2,21 +2,22 @@ exports.devices =
 [
 	{
 		id:'live-device1',
-		senderPort: 9001,
-		receiverPort: 9000,
+		fromPort: 9001,
+		toPort: 9000,
 		host: 'localhost'
 	}
 	,{
 		id:'dummy-device1',
-		senderPort: 9999,
-		receiverPort: 9998,
+		fromPort: 9999,
+		toPort: 9998,
 		host: 'localhost'
 		//mirrors: ["live-device1"]
 	}
 	,{
     id:'touchosc-device1',
-    senderPort: 9100,
-    receiverPort: 9101,
-    host: 'localhost'//'192.168.1.128'
+    fromPort: 9100,
+    toPort: 9990,
+	toHost: '192.168.1.128',
+    host: 'localhost'
   }
 ];

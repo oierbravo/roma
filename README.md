@@ -24,8 +24,8 @@ WORK IN PROGRESS!!!
     device1: {
         id:'live-device1',
 		mirrors:['mirrorDeviceId1'], //optional. Must be an array of strings even if is only one mirror. When used redirects all incoming messages 
-        senderPort: 9001, //optional
-        receiverPort: 9000, //optional
+        fromPort: 9001, //optional
+        toPort: 9000, //optional
         host: 'localhost'
     }
 
@@ -90,6 +90,20 @@ WORK IN PROGRESS!!!
         }]
     
 	}
+	
+## WebAPI
+URL: http://localhost:3000 
+
+### Devices
+- GET "/devices": List of devices + info.
+- GET "/device/:id": Device info.
+- POST "/device/:id": Updates device. Requires JSON object body.
+- POST "/add-device": Adds a device. Requires JSON object body with the same data format as the config.
+- DEL "/device/:id": Deletes a device.
+
+### Routes
+- GET "/routes": List of routes + info.
+		
 ## Examples:
 - Devices:
     demo-devices.js
